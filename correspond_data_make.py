@@ -8,7 +8,7 @@ def check(lst, content):
     return 0
 
 print("tsv読み込み中")
-data = pd.read_csv("test_questions_10000.tsv",delimiter="\t")
+data = pd.read_csv("data/test_questions_10000.tsv",delimiter="\t")
 
 
 #region 変数定義
@@ -68,7 +68,7 @@ for index,row in data.iterrows():
     if tmp['家族'] + tmp['出産']+ tmp['子供'] + tmp['健康'] + tmp['私'] + tmp['お金'] > 1 :
         df = df.append(tmp,ignore_index=True)
 
-df.to_csv("sample3.csv")
+df.to_csv("result/sample3.csv")
 
 
 
