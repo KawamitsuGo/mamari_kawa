@@ -41,7 +41,6 @@ for index,row in df.iterrows():
 
     #品詞での振り分け
     for wakachi in wakachi_list:
-        print(wakachi)
         if(wakachi[0] not in ('EOS')):
             hinshis = wakachi[3].split('-')
             hinshi = hinshis[0]
