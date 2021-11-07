@@ -11,7 +11,7 @@ from collections import Counter
 #ファイル読み込み
 
 #region start 
-df = pd.read_csv("data/test_questions_100.tsv",delimiter='\t')
+df = pd.read_csv("../Sotsuron/data/test_questions_10000.tsv",delimiter='\t')
 tagger = MeCab.Tagger("-Ochasen")
 wakaches = []
 columns = ['id','word','speech','speech_']
@@ -48,7 +48,6 @@ for index,row in df.iterrows():
                 hinshi_detail = hinshis[1]
             else:
                 hinshi_detail = ""
-            print(hinshi)
             if (hinshi == "名詞") and (hinshi_detail == ("一般"or "副詞可能" or "サ変接続" or "形容動詞語幹")) :
                 tmp = make_tmp(row['id'],wakachi[2],hinshi,hinshi_detail)
                 result = result.append(tmp,ignore_index=True)
@@ -57,6 +56,7 @@ for index,row in df.iterrows():
                 result = result.append(tmp,ignore_index=True)
 
     i = i + 1
+    print(i)
 
 result.to_csv("result/morphome.tsv",sep='\t')
 

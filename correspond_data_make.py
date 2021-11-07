@@ -8,7 +8,7 @@ def check(lst, content):
     return 0
 
 print("tsv読み込み中")
-data = pd.read_csv("../../提供データ/split/question_bt",delimiter="\t")
+data = pd.read_csv("../../Sotsuron/test_questions_10000.tsv",delimiter="\t")
 
 
 #region 変数定義
@@ -20,7 +20,7 @@ kenko_words = ['入院','病院','熱','風邪','体重','薬','咳']
 kodomo_words =['子供','赤ちゃん','息子','娘','子ども','子','抱っこ',]
 okane_words = ['お金','仕事']
 watashi_words = ['私','わたし','自分']
-column = ['category_id','time']
+column = ['category_id','time','score']
 #endregion
 
 print(column)
@@ -68,7 +68,14 @@ for index,row in data.iterrows():
     if tmp['家族'] + tmp['出産']+ tmp['子供'] + tmp['健康'] + tmp['私'] + tmp['お金'] > 1 :
         df = df.append(tmp,ignore_index=True)
 
-df.to_csv("result/sample3.csv")
+
+senti_df = pd.read_csv("senti.tsv",delimiter="\t")
+
+eva_df = pd.merge(df, senti_df, how='inner', on=['word', 'speech'])
+
+
+
+df.to_csv("result/sample4.csv")
 
 
 
