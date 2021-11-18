@@ -11,7 +11,7 @@ from collections import Counter
 #ファイル読み込み
 
 #region start 
-df = pd.read_csv("../Sotsuron/data/test_questions_10000.tsv",delimiter='\t')
+df = pd.read_csv("../question_plain_text_100000.csv")
 tagger = MeCab.Tagger("-Ochasen")
 wakaches = []
 columns = ['id','word','speech','speech_']
@@ -58,7 +58,7 @@ for index,row in df.iterrows():
     i = i + 1
     print(i)
 
-result.to_csv("result/morphome.tsv",sep='\t')
+result.to_csv("result/morphome_chukan.tsv",sep='\t')
 
 
 

@@ -1,0 +1,68 @@
+getwd()
+setwd("TUS/mamari/kawa")
+setwd("TUS/mamari_kawa")
+tajutaiou <- read.csv("plot.csv",head=TRUE)
+setwd("data")
+tajutaiou <- read.csv("plot.csv",head=TRUE)
+tajutaiou
+tajutaiou <- read.csv("plot.csv")
+tajutaiou
+tajutaiou <- read.csv("plot.csv",head=FALSE)
+tajutaiou
+tajutaiou <- read.csv("plot.csv",row.names=1)
+tajutaiou
+library(ggplot2)
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,labels = rownames(df)) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割
+theme_classic(base_size = 20)
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = rownames(df)) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+  theme_classic(base_size = 20)
+df <- tajutaiou
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = rownames(df)) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+  theme_classic(base_size = 20)
+df <- read.csv("plot.csv")
+df
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+  theme_classic(base_size = 20)
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point()
+library(ggrepel)
+library(ggrepel)
+install.packages("ggrepel")
+library(ggrepel)
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point()
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point()
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = rownames(df)) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+df <- read.csv("plot.csv")
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+df <- read.csv("plot.csv")
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)

@@ -8,7 +8,7 @@ def check(lst, content):
     return 0
 
 print("tsv読み込み中")
-data = pd.read_csv("../../Sotsuron/test_questions_10000.tsv",delimiter="\t")
+data = pd.read_csv("../Sotsuron/data/test_questions_10000.tsv",delimiter="\t")
 
 
 #region 変数定義
@@ -20,7 +20,7 @@ kenko_words = ['入院','病院','熱','風邪','体重','薬','咳']
 kodomo_words =['子供','赤ちゃん','息子','娘','子ども','子','抱っこ',]
 okane_words = ['お金','仕事']
 watashi_words = ['私','わたし','自分']
-column = ['category_id','time','score']
+column = ['id','content','time']
 #endregion
 
 print(column)
@@ -38,7 +38,8 @@ for index,row in data.iterrows():
     #print(row)
     #print(type(row))
     tmp = pd.Series(index=column)
-    tmp['category_id'] = row['category_id']
+    tmp['id'] = row['id']
+    tmp['content'] = row['content']
     aps = row['created'].split(' ')
     ap = aps[1]
     print(ap)
@@ -69,13 +70,24 @@ for index,row in data.iterrows():
         df = df.append(tmp,ignore_index=True)
 
 
-senti_df = pd.read_csv("senti.tsv",delimiter="\t")
+senti_df = pd.read_csv("senti_10000.tsv",delimiter="\t")
 
-eva_df = pd.merge(df, senti_df, how='inner', on=['word', 'speech'])
+senti_df = senti_df.iloc[:,1:3]
+
+eva_df = pd.merge(senti_df, df, how='inner', on='id')
+
+print(df)
+print(senti_df)
+print(eva_df)
+
+for index,row in eva_df.iterrows():
+    if row['score'] >= 0:
+        eva_df.at[index,'score'] = 1
+    else:
+        eva_df.at[index,'score'] = 0
 
 
-
-df.to_csv("result/sample4.csv")
+eva_df.to_csv("result/sample4.csv")
 
 
 

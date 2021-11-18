@@ -1,0 +1,664 @@
+tajutaiou <- read.csv("result/sample5.csv",head=TRUE)#
+pn <- factor(tajutaiou$score, level = c(0:1),labels = c("Neg","Pos"))#
+watashi <- factor(tajutaiou$私, level = c(0:1),labels = c("F","T"))#
+danna <- factor(tajutaiou$旦那, level = c(0:1),labels = c("T","F"))#
+kodomo <- factor(tajutaiou$子供, level = c(0:1),labels = c("F","T"))#
+oya <- factor(tajutaiou$親, level = c(0:1),labels = c("F","T"))#
+time <- factor(tajutaiou$time, level = c(0:3),labels = c("yonaka","asa","yugata","yoru"))#
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya)#
+summary(tajutaiou2)#
+library(MASS)#
+result <- mca(tajutaiou2)
+setwd("TUS")
+estwd("Sotsuron")
+setwd("Sotsuron")
+list.files()
+setwd("mamari_kawa")
+tajutaiou <- read.csv("result/sample5.csv",head=TRUE)#
+pn <- factor(tajutaiou$score, level = c(0:1),labels = c("Neg","Pos"))#
+watashi <- factor(tajutaiou$私, level = c(0:1),labels = c("F","T"))#
+danna <- factor(tajutaiou$旦那, level = c(0:1),labels = c("T","F"))#
+kodomo <- factor(tajutaiou$子供, level = c(0:1),labels = c("F","T"))#
+oya <- factor(tajutaiou$親, level = c(0:1),labels = c("F","T"))#
+time <- factor(tajutaiou$time, level = c(0:3),labels = c("yonaka","asa","yugata","yoru"))#
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya)#
+summary(tajutaiou2)#
+library(MASS)#
+result <- mca(tajutaiou2)
+tajutaiou <- read.csv("result/sample5.csv",head=TRUE)#
+pn <- factor(tajutaiou$score, level = c(0:1),labels = c("Neg","Pos"))#
+watashi <- factor(tajutaiou$私, level = c(0:1),labels = c("F","T"))#
+danna <- factor(tajutaiou$旦那, level = c(0:1),labels = c("T","F"))#
+kodomo <- factor(tajutaiou$子供, level = c(0:1),labels = c("F","T"))#
+oya <- factor(tajutaiou$親, level = c(0:1),labels = c("F","T"))#
+time <- factor(tajutaiou$time, level = c(0:3),labels = c("yonaka","asa","yugata","yoru"))#
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya)#
+summary(tajutaiou2)#
+library(MASS)#
+result <- mca(tajutaiou2)
+tajutaiou <- read.csv("result/sample5.csv",head=TRUE)#
+pn <- factor(tajutaiou$score, level = c(0:1),labels = c("Neg","Pos"))#
+watashi <- factor(tajutaiou$私, level = c(0:1),labels = c("F","T"))#
+danna <- factor(tajutaiou$旦那, level = c(0:1),labels = c("T","F"))#
+kodomo <- factor(tajutaiou$子供, level = c(0:1),labels = c("F","T"))#
+oya <- factor(tajutaiou$親, level = c(0:1),labels = c("F","T"))#
+time <- factor(tajutaiou$time, level = c(0:3),labels = c("yonaka","asa","yugata","yoru"))#
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya)#
+summary(tajutaiou2)#
+library(MASS)#
+result <- mca(tajutaiou2)
+plot(result)
+tajutaiou <- read.csv("result/sample5.csv",head=TRUE)#
+pn <- factor(tajutaiou$score, level = c(0:1),labels = c("Neg","Pos"))#
+watashi <- factor(tajutaiou$私, level = c(0:1),labels = c("F","T"))#
+danna <- factor(tajutaiou$旦那, level = c(0:1),labels = c("T","F"))#
+kodomo <- factor(tajutaiou$子供, level = c(0:1),labels = c("F","T"))#
+oya <- factor(tajutaiou$親, level = c(0:1),labels = c("F","T"))#
+time <- factor(tajutaiou$time, level = c(0:3),labels = c("yonaka","asa","yugata","yoru"))#
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya,time,pn)#
+summary(tajutaiou2)#
+library(MASS)#
+result <- mca(tajutaiou2)
+result
+plot(result)
+tajutaiou <- read.csv("result/sample5.csv",head=TRUE)#
+pn <- factor(tajutaiou$score, level = c(0:1),labels = c("Neg","Pos"))#
+watashi <- factor(tajutaiou$私, level = c(0:1),labels = c("F","T"))#
+danna <- factor(tajutaiou$旦那, level = c(0:1),labels = c("T","F"))#
+kodomo <- factor(tajutaiou$子供, level = c(0:1),labels = c("F","T"))#
+oya <- factor(tajutaiou$親, level = c(0:1),labels = c("F","T"))#
+time <- factor(tajutaiou$time, level = c(0:3),labels = c("yonaka","asa","yugata","yoru"))#
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya,time,pn)#
+summary(tajutaiou2)#
+library(MASS)#
+result <- mca(tajutaiou2)
+tajutaiou <- read.csv("result/sample5.csv",head=TRUE)#
+pn <- factor(tajutaiou$score, level = c(0:1),labels = c("Neg","Pos"))#
+watashi <- factor(tajutaiou$私, level = c(0:1),labels = c("F","T"))#
+danna <- factor(tajutaiou$旦那, level = c(0:1),labels = c("T","F"))#
+kodomo <- factor(tajutaiou$子供, level = c(0:1),labels = c("F","T"))#
+oya <- factor(tajutaiou$親, level = c(0:1),labels = c("F","T"))#
+time <- factor(tajutaiou$time, level = c(0:3),labels = c("yonaka","asa","hiru","yoru"))#
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya)#
+summary(tajutaiou2)#
+library(MASS)#
+result <- mca(tajutaiou2)
+result
+plot(result)
+plot(result)tajutaiou2 <- data.frame(watashi,danna,kodomo,oya,time)#
+summary(tajutaiou2)#
+result <- mca(tajutaiou2)#
+result#
+plot(result)
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya,time)#
+summary(tajutaiou2)#
+result <- mca(tajutaiou2)#
+result#
+plot(result)
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya,pn)#
+summary(tajutaiou2)#
+result <- mca(tajutaiou2)#
+result#
+plot(result)
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya,time,pn)#
+summary(tajutaiou2)#
+result <- mca(tajutaiou2)#
+result#
+plot(result)tajutaiou2 <- data.frame(watashi,danna,kodomo,oya,time,pn)#
+summary(tajutaiou2)#
+result <- mca(tajutaiou2)#
+result#
+plot(result)
+result$cs
+result$rs
+shuseibun <- result$rs
+shuseibun
+sample <- ead.csv("sample5.csv",head=TRUE)
+sample <- read.csv("sample5.csv",head=TRUE)
+getwd()
+sample <- read.csv("result/sample5.csv",head=TRUE)
+sample$score
+shuseibun2 <= transform(shuseibun, score = sample$score)
+shuseibun2 <- transform(shuseibun, score = sample$score)
+pero <- sample$score
+pero
+shuseibun2 <- transform(shuseibun, score = pero)
+shuseibun2
+library("ggplot2")#
+library("ggrepel")#
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = 1, y = 2,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+library("ggplot2")#
+library("ggrepel")#
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = 1, y = 2,label = score)        # displ,cty列をx,y軸にmapping
+shuseibun2
+ggplot(data = shuseibun2)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = 1, y = 2,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +
+aes(x = 1, y = 2,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +
+s
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = 1, y = 2,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point()
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = "1", y = "2" ,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point()
+df <- read.csv("data/plot2.csv",head=TRUE)#
+library("ggplot2")#
+library("ggrepel")#
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+df
+colnames(shuseibun2) <- c("x","y","score")
+shuseibun2
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point()
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+s
+s#
+aas
+s#
+aas
+s#
+aas#
+#
++
+s#
+aas#
+#
++#
++
+aas#
+#
++
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel()
+colnames(shuseibun2)
+shuseibun3 <- shuseibun2[1:500,]
+shuseibun3
+ggplot(data = shuseibun3) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel()
+ggplot(data = shuseibun3) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel()
+ggplot(data = shuseibun3) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel()
+ggplot(data = shuseibun3) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20)
+library(wesanderson)#
+pal <- wes_palette(10, name = "Zissou1", type = "continuous")
+install(wesanderson)
+install.packages(wesanderson)
+install.packages("wesanderson")
+library(wesanderson)#
+pal <- wes_palette(10, name = "Zissou1", type = "continuous")
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+df
+history
+list.files()
+history()
+tajutaiou2 <- data.frame(watashi,danna,kodomo,oya,time)#
+summary(tajutaiou2)#
+library(MASS)#
+result <- mca(tajutaiou2)#
+result#
+plot(result)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+plot(result)
+shuseibun <- result$rs
+shuseibun
+pero
+shuseibun2 <- transform(shuseibun,score=pero
+)
+suseibun2
+shuseibun2
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+colnames(shuseibun2) <- c("x","y","score")
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 10) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+wes_palettes
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = Moonrise1)
+pal <- wes_palette(10, name = "Moonrise1", type = "continuous")
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+pal <- wes_palette(10, name = "Royal1", type = "continuous")
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+pal <- wes_palette(30, name = "Royal1", type = "continuous")
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+library(wesanderson)#
+pal <- wes_palette(10, name = "Zissou1", type = "continuous")
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 2) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 3) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+xval <- seq(1,10)#
+yval1 <-round(runif(10)*10,0)#
+yval2 <-round(runif(10)*10,0)#
+dat <- data.frame(xval=xval,yval1=yval1,yval2=yval2)#
+dat
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  scale_x_continuous(breaks=seq(0,11,1))+#x軸の範囲を指定#
+  scale_y_continuous(breaks=seq(0,11,1))+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=dat, #
+    mapping=aes(x=xval, y=yval1), #
+    geom="bar", #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity",#データの表示位置#
+    alpha=0.5#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity",#
+    colour="blue"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+    colour="blue",#
+    size=5#
+  )
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  scale_x_continuous(breaks=seq(0,11,1))+#x軸の範囲を指定#
+  scale_y_continuous(breaks=seq(0,11,1))+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=dat, #
+    mapping=aes(x=xval, y=yval1), #
+    geom="bar", #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity",#データの表示位置#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity",#
+    colour="blue"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+    colour="blue",#
+    size=5#
+  )
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  scale_x_continuous(breaks=seq(0,11,1))+#x軸の範囲を指定#
+  scale_y_continuous(breaks=seq(0,11,1))+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=dat, #
+    mapping=aes(x=xval, y=yval1), #
+    geom="bar", #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity",#データの表示位置#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+    colour="blue",#
+    size=5#
+  )
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  scale_x_continuous(breaks=seq(0,11,1))+#x軸の範囲を指定#
+  scale_y_continuous(breaks=seq(0,11,1))+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=dat, #
+    mapping=aes(x=xval, y=yval1), #
+    geom="bar", #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity",#データの表示位置#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+  )
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  scale_x_continuous(breaks=seq(0,11,1))+#x軸の範囲を指定#
+  scale_y_continuous(breaks=seq(0,11,1))+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=dat, #
+    mapping=aes(x=xval, y=yval1), #
+    geom="bar", #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity",#データの表示位置#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+  )
+df
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  scale_x_continuous(breaks=seq(0,11,1))+#x軸の範囲を指定#
+  scale_y_continuous(breaks=seq(0,11,1))+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=dat, #
+    mapping=aes(x=xval, y=yval1), #
+    geom="bar", #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity",#データの表示位置#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+  )
+tajutaiou$cs
+result$cs
+df <- read.csv("data/plot3.csv",head=TRUE)
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=df, #
+    mapping=aes(x=x, y=y,label=word), #
+    geom_point(), #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity",#データの表示位置#
+    alpha=0.5#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity",#
+    colour="blue"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+    colour="blue",#
+    size=5#
+  )
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=df, #
+    mapping=aes(x=x, y=y,label=word), #
+    geom_point(), #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity" )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+  )
+ggplot() +#
+  xlab("X value")+#
+  ylab("Y value")+#
+  ggtitle("Bar chart & line graph")+#
+  layer(  #軸の範囲を指定。breaks=seq(下限値-1, 上限値+1, 区切り単位)#
+    data=df, #
+    mapping=aes(x=x, y=y,label=word), #
+    geom_text_repel(), #
+    stat="identity",#データの統計処理方法を指定 #
+    position="identity" )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="line", #
+    stat="identity", #
+    position="identity"#
+  )+#
+  layer(#
+    data=dat, #
+    mapping=aes(x=xval, y=yval2), #
+    geom="point", #
+    stat="identity", #
+    position="identity",#
+  )
+library("ggplot2")#
+library("ggrepel")#
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+library("ggplot2")#
+library("ggrepel")#
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+df <- read.csv("data/plot3.csv",head=TRUE)
+library("ggplot2")#
+library("ggrepel")#
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+par(new=T)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = Moonrise1)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+g <- ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+g + ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+g + ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+g <-  ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+g <- g + geom_point(data = shuseibun, aes(x, y))
+g <- g + geom_point(data = shuseibun2, aes(x, y))
+plot(g)
+df
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+ggplot(data = df) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,label = word) +       # displ,cty列をx,y軸にmapping#
+  geom_point() +                  # 散布図を描く       # drv列に応じてパネル分割#
+geom_text_repel() +#
+  theme_classic(base_size = 20)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 5) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)
+ggplot(data = shuseibun2) +              # mpgデータでキャンバス準備#
+  aes(x = x, y = y,col = score) +       # displ,cty列をx,y軸にmapping#
+  geom_point(size = 10) +    #
+  theme_classic(base_size = 20) +#
+scale_color_gradientn(colors = pal)

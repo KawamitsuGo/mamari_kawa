@@ -28,4 +28,4 @@ score_df = eva_df.groupby('id').mean().reset_index()
 
 print(score_df)
 
-score_df.to_csv("senti.tsv",sep='\t')
+score_df.to_csv("senti_chukan.tsv",sep='\t')
